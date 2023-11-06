@@ -1,0 +1,302 @@
+body {
+    border: none;
+}
+
+
+/*____________1:structure header________________*/
+
+header .container-nav {
+    display: flex; /* or inline-flex */
+    justify-content: space-between;;
+    border-color: aqua;
+    font-weight: 600;
+}
+
+
+/*____________1:structure header________________*/
+/*______________1.1:navigation__________________*/
+/*__________________1.1.1:container_____________*/
+
+.container-nav .container-menu {
+    display: flex;
+    flex-direction: row;
+    border-color: black;;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.container-nav .container-researche-tool {
+    display: flex;
+    flex-direction: row-reverse;;
+    border-color: coral;
+    align-items: center;
+}
+/*____________1:structure header________________*/
+/*______________1.1:navigation__________________*/
+/*__________________1.1.1:item_____________*/
+
+nav .item-home {
+    order: 0;
+    
+}
+nav .item-entreprise {
+    order: 1;
+    
+}
+nav .item-réalisation {
+    order: 2;
+    
+}
+nav .item-contact {
+    order: 3;
+    
+}
+
+/*____________1:structure header________________*/
+/*______________1.2:research-tool_______________*/
+
+
+button {
+    background-color: #CAB162;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/*____________2:structure main________________*/
+/*______________2.1:section texte__________________*/
+
+
+main .container-section-texte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: flex-start;;
+    border-color: chartreuse;
+}
+
+main .container-container { /*innutilisé*/
+    display: flex;
+    flex-direction: row;;
+    border-color: darkorchid;
+
+
+}
+
+/*____________2:structure main________________*/
+/*______________2.2:items section texte__________________*/
+
+
+main .stretch {
+    flex-grow: 1;;
+    border-color: blue;
+}
+
+main .item-section {
+    border-color: darkgoldenrod;
+}
+
+.liste-none {
+list-style: none;
+}
+
+.liste-none li {
+ margin-bottom: 10px;
+}
+
+/*____________2:structure main________________*/
+/*______________2.3:section image__________________*/
+
+main .container-section-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;;
+    border-color: khaki;
+    height: 400px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .container-section-image-entreprise{
+    display: flex;
+    flex-direction: row;    ;
+    border-color: khaki;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo-container {
+    cursor: url(/wp-content/themes/gm/_assets/img/cursor-arrow.svg) 0 0, default;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+    min-height: 500px;
+    max-height: 500px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;;
+    border-color: blue;
+}
+/*____________2:structure main________________*/
+/*______________2.4:items section image__________________*/
+
+.container-section-image img {
+    width: 200px;
+    height: 145px;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*____________2:structure main________________________*/
+/*______________2.5:section avec colonnes_____________*/
+
+.container-section-column{ /* pas de flex warp possible faire un @ media*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;;
+    border-color: navy;
+   
+}
+
+.container-section-column-entreprise{ /* pas de flex warp possible faire un @ media*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;;
+    border-color: navy;
+   
+}
+
+/*____________3:structure footer________________________*/
+
+footer{
+
+    height: 300px;
+    background-color: #030303;
+    color: #c6ceb9;
+
+
+}
+
+
+
+/*____________4:Police d'écriture________________*/
+/*______________4.1:général________________*/
+header{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.0em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-color: black;
+    font-family:  'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: start;
+}
+p,li {
+font-family:  'Roboto', sans-serif;
+font-size: 19px;
+padding: auto;
+border-color: cornflowerblue;
+font-weight: lighter;
+margin-top: 0;
+margin-bottom: 30px;
+}
+.liste-none li {
+    text-align: start;
+}
+p{
+    padding-left: 10px;
+}
+ul{
+    border-color: lightseagreen;
+    margin-top: auto;
+}
+.container-section-column h2, .container-section-column p {
+margin: 0px 30px;
+}
+/*____________4:Police d'écriture________________*/
+/*______________4.2:nav________________*/
+
+.current-page {
+    color: #CAB162;
+}
+
+nav div a {
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+nav div a:hover {
+    color: #CAB162;
+}
+
+/*____________5:fonds et couleurs________________*/
+
+.background1{
+
+    background-color: #F7F5EE;
+}
+.background2{
+
+    background-color: #D8C277;
+    border: 1px , 0px, solid;
+    border-color: black;
+}
+.background3{
+
+    background-color: #F9CDC9;
+
+}
+
+/*____________6:réalisation________________*/
+
+.mosaique {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Styles pour chaque élément de la mosaïque (exemples) */
+.mosaique .realisation {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mosaique .realisation img {
+    max-width: 100%;
+}
