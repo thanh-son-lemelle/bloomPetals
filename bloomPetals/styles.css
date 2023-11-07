@@ -1,5 +1,7 @@
 body {
     border: none;
+    padding: 0%;
+    background-color: #F7F5EE ;
 }
 
 
@@ -116,8 +118,7 @@ list-style: none;
 main .container-section-image{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;;
-    border-color: khaki;
+    justify-content: space-evenly;
     height: 400px;
     align-items: center;
     flex-wrap: wrap;
@@ -259,6 +260,10 @@ nav div a:hover {
     color: #CAB162;
 }
 
+p a:hover {
+    color: coral;
+}
+
 /*____________5:fonds et couleurs________________*/
 
 .background1{
@@ -268,13 +273,14 @@ nav div a:hover {
 .background2{
 
     background-color: #D8C277;
-    border: 1px , 0px, solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     border-color: black;
 }
 .background3{
-
+    border-top: 1px solid;
+    border-color: #030303;
     background-color: #F9CDC9;
-
 }
 
 /*____________6:réalisation________________*/
@@ -290,13 +296,15 @@ nav div a:hover {
 
 /* Styles pour chaque élément de la mosaïque (exemples) */
 .mosaique .realisation {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
 }
 
 .mosaique .realisation img {
     max-width: 100%;
+    max-height: auto;
 }

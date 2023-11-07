@@ -16,8 +16,8 @@
             <div class="container-menu"><!--menu-->
                 <a class="item-home current-page">Home</a>
                 <a class="item-entreprise" href="entreprise.html">Entreprise</a>
-                <a class="item-réalisation">Réalisation</a>
-                <a class="item-contact">Contact</a>
+                <a class="item-réalisation" href="realisations.html">Réalisation</a>
+                <a class="item-contact" href="contact.html">Contact</a>
             </div>
             <div class="container-researche-tool"><!--barre de recherche aver le bouton-->
                 <button onclick="searchword()">Rechercher</button><!-- fait appel a la fonction javascrpit--></button>
@@ -141,8 +141,18 @@
         </section>
 
     </main>
-    <footer>
-        <p>&copy; 2023 BloomPetals.com</p>
+    <footer style="display: flex;">
+        <div style="max-width: max-content; height: inherit; display: flex; align-items: end;">
+            <p style="margin-bottom: 0%;">&copy; 2023 BloomPetals.com</p>
+        </div>
+        <nav class="container-nav" style="border: solid; border-color: white; flex-grow: inherit;"><!--container qui va permettre de répartir les deux autres container-->
+            <div class="container-menu"><!--menu-->
+                <a class="item-home current-page">Home</a>
+                <a class="item-entreprise" href="entreprise.html">Entreprise</a>
+                <a class="item-réalisation" href="realisations.html">Réalisation</a>
+                <a class="item-contact" href="contact.html">Contact</a>
+            </div>
+        </nav>
     </footer>
 
 </body>
